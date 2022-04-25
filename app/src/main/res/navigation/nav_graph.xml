@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/findMusicArtists">
+
+    <fragment
+        android:id="@+id/findMusicArtists"
+        android:name="com.example.testlastfm.FindMusicArtists"
+        android:label="fragment_find_music_artists"
+        tools:layout="@layout/fragment_find_music_artists" >
+        <action
+            android:id="@+id/action_findMusicArtists_to_artistGetInfo"
+            app:destination="@id/artistGetInfo"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_findMusicArtists_to_artistGetTopTracks"
+            app:destination="@id/artistGetTopTracks"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/artistGetInfo"
+        android:name="com.example.testlastfm.ArtistGetInfo"
+        android:label="fragment_artist_get_info"
+        tools:layout="@layout/fragment_artist_get_info" >
+        <action
+            android:id="@+id/action_artistGetInfo_to_findMusicArtists"
+            app:destination="@id/findMusicArtists"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/artistGetTopTracks"
+        android:name="com.example.testlastfm.ArtistGetTopTracks"
+        android:label="fragment_artist_get_top_tracks"
+        tools:layout="@layout/fragment_artist_get_top_tracks" >
+        <action
+            android:id="@+id/action_artistGetTopTracks_to_findMusicArtists"
+            app:destination="@id/findMusicArtists"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+</navigation>

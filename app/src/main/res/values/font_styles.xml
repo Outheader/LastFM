@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="roboto_bold_29">
+        <item name="android:textSize">14.5pt</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="roboto_bold_26">
+        <item name="android:textSize">13pt</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="roboto_bold_19">
+        <item name="android:textSize">9.5pt</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="roboto_regular_16">
+        <item name="android:textSize">8pt</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="search_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">8pt</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+</resources>
